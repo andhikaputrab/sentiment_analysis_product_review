@@ -10,8 +10,9 @@ from src.utils.config import config
 load_dotenv()
 
 @st.cache_resource
-def login_huggingface(HF_TOKEN):
+def login_huggingface():
     # HF_TOKEN = os.getenv("HF_TOKEN")
+    HF_TOKEN = st.secrets["HF_TOKEN"]
     try:
         login(HF_TOKEN)
         print("Hugging Face login successful.")
@@ -22,9 +23,9 @@ def login_huggingface(HF_TOKEN):
     
 
 @st.cache_resource # Cache model agar tidak di-load ulang
-def load_bert_model_and_tokenizer(HF_TOKEN):
+def load_bert_model_and_tokenizer():
     """Memuat model dan tokenizer DistilBERT dari Hugging Face Hub."""
-    login_huggingface(HF_TOKEN)
+    login_huggingface()
     try:
         tokenizer = AutoTokenizer.from_pretrained(config.get("HF_BERT_MODEL"))
         model = AutoModelForSequenceClassification.from_pretrained(config.get("HF_BERT_MODEL"))
