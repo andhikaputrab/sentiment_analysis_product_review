@@ -75,10 +75,8 @@ def texts_to_padded_sequences(texts, tokenizer):
 #         tokenizer = pickle.load(f)
 #     return model, tokenizer
 
-def load_lstm_model_huggingface(HF_TOKEN):
+def load_lstm_model():
     try:
-        login_huggingface(HF_TOKEN)
-    
         # model_path = hf_hub_download(repo_id=config.get("HF_LSTM_MODEL"), filename="sentiment_lstm_model.h5")
         # tokenizer_path = hf_hub_download(repo_id=config.get("HF_LSTM_MODEL"), filename="tokenizer.pickle")
         
