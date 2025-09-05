@@ -1,0 +1,21 @@
+# Data Configuration
+data_path: "artifacts/amazon.csv"
+
+# Model Configuration
+HF_BERT_MODEL: "andhikaputrab/distilbert-base-uncased-finetuned-product-review"
+LSTM_MODEL: "artifacts/sentiment_lstm_model.h5"
+LSTM_TOKENIZER: "artifacts/tokenizer.pickle"
+
+# Streamlit settings
+PAGE_TITLE: "Overview"
+PAGE_ICON: "static/img/home.png"
+LAYOUT: "wide"
+
+PAGE_TITLE_PROFILE: "Profile"
+PAGE_ICON_PROFILE: "static/img/profile.png"
+LAYOUT_PROFILE: "wide"
+
+PAGE_TITLE_CHAT: "Chat"
+PAGE_ICON_CHAT: "🤖"
+LAYOUT_CHAT: "wide"
+
