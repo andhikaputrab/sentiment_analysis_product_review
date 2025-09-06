@@ -40,11 +40,10 @@ with col2:
     
     st.markdown("""
     ### Summary
-    I am a Data Analytics enthusiast with an educational background in Informatics Engineering and certification in Data Analytics 
-    and currently studying machine learning. Proficiency in data processing, visualization, and analysis using Python, Tableau, and 
-    Excel. Good problem-solving and critical thinking skills, committed to providing accurate data insights to support company 
-    decision-making, and highly motivated to continue learning and developing in the field of data analytics.
-    """)
+    <div style="text-align: justify;">I am a Bachelor Degree of Informatics Engineering and currently attending Master Degree of Informatics Engineering on Telkom University.
+    Proficiency in data processing, visualization, Python, Machine Learning, Tableau, and Excel. Good problem-solving and critical thinking skills, committed to providing accurate data insights to support company 
+    decision-making, and highly motivated to continue learning and developing in the field of data analytics.</div>
+    """, unsafe_allow_html=True)
     
 # Experience Section
 st.header("Working Experience")
@@ -99,7 +98,7 @@ st.header("Education")
 education = [
     {
         "university": "Telkom University",
-        "period": "2024 - Present",
+        "period": " 2024 - Present ",
         "degree": "Master Degree of Informatics Engineering",
         "coursework": "Data Analysis, Machine Learning, Artificial Intelligence, Natural Language Processing",
         "GPA": "3.26/4.00",
@@ -114,54 +113,59 @@ education = [
 ]
 
 for edu in education:
-    with st.expander(f"**{edu['university']}**", expanded=True):
-        st.markdown(f"- **Period:** {edu['period']}")
-        st.markdown(f"- **Degree:** {edu['degree']}")
-        st.markdown(f"- **Relevant Coursework:** {edu['coursework']}")
-        st.markdown(f"- **GPA:** {edu['GPA']}")
+    with st.expander(f"**{edu['university']} ({edu['period']})**", expanded=True):
+        st.markdown(f" {edu['degree']}")
+        st.markdown(f" **Relevant Coursework:** {edu['coursework']}")
+        st.markdown(f" **GPA:** {edu['GPA']}")
 
-# Certifications
+# # Certifications
+# st.header("Certifications")
+# st.markdown("""
+# #### Big Data using Python
+# - **orginizer:** Online Course – Kominfo
+# - **Relevant Coursework:** Python, Data Analysis, Data Cleaning
+# - **Period:** 2021
+# """)
+# st.markdown("""
+# #### Google Data Analytics
+# - **orginizer:** Online Course – Kominfo
+# - **Relevant Coursework:** Python, Data Analysis, Data Cleaning, Tableau
+# - **Period:** 2024
+# """)
+# st.markdown("""
+# #### English Proficiency Test (EPRT)
+# - **orginizer:** Telkom University
+# - **Period:** 2025
+# - **Score:** 513
+# """)
+
 st.header("Certifications")
-st.markdown("""
-#### Big Data using Python
-- **orginizer:** Online Course – Kominfo
-- **Relevant Coursework:** Python, Data Analysis, Data Cleaning
-- **Period:** 2021
-""")
-st.markdown("""
-#### Google Data Analytics
-- **orginizer:** Online Course – Kominfo
-- **Relevant Coursework:** Python, Data Analysis, Data Cleaning, Tableau
-- **Period:** 2024
-""")
-st.markdown("""
-#### English Proficiency Test (EPRT)
-- **orginizer:** Telkom University
-- **Period:** 2025
-- **Score:** 513
-""")
 
-# certifications = [
-#     {
-#         "title": "Big Data using Python",
-#         "orginizer": "Online Course – Kominfo",
-#         "period": "2021"
-#     },
-#     {
-#         "title": "Google Data Analytics",
-#         "orginizer": "Online Course – Kominfo",
-#         "period": "2024"
-#     },
-#     {
-#         "title": "English Proficiency Test (EPRT)",
-#         "orginizer": "Telkom University",
-#         "period": "2025"
-#     }
-# ]
+certifications = [
+    {
+        "title": "Big Data using Python",
+        "orginizer": "Online Course – Kominfo",
+        "Relevant Course": "Data Processing, Data Visualization, Python",
+        "period": "2021"
+    },
+    {
+        "title": "Google Data Analytics",
+        "orginizer": "Online Course – Kominfo",
+        "Relevant Course": "Data Processing, Data Visualization, Python, R, Tableau",
+        "period": "2024"
+    },
+    {
+        "title": "English Proficiency Test (EPRT)",
+        "orginizer": "Telkom University",
+        "period": "2025"
+    }
+]
     
-# for cert in certifications:
-#     with st.expander(f"**{cert['title']} - {cert['period']}**", expanded=True):
-#         st.markdown(f"{cert['orginizer']}")
-#         # for point in cert['points']:
-#         #     st.markdown(f"- {point}")
+for cert in certifications:
+    with st.expander(f"**{cert['title']} ({cert['period']})**", expanded=True):
+        st.markdown(f"{cert['orginizer']}")
+        if cert['title'] == "English Proficiency Test (EPRT)":
+            st.markdown("Score: 513")
+        else:
+            st.markdown(f"**Relevant Course:** {cert['Relevant Course']}")
         
