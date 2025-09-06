@@ -30,14 +30,7 @@ with col1:
     ### Contact
     - 📧 andhikaputra1301@gmail.com
     - 📱 082213676520 (WA)
-    """)
-    
-    # Social Links
-    st.markdown("""
-    ### Social Links
-    - [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/andhika-putra-bagaskara13/)
-    - [![Instagram](https://img.icons8.com/color/48/000000/instagram-new--v1.png)](https://www.instagram.com/andhikaputrab/)
-    - [![Instagram](https://img.icons8.com/color/48/000000/github.png)](https://github.com/andhikaputrab)
+    - [![LinkedIn](https://img.icons8.com/color/48/000000/linkedin.png)](https://www.linkedin.com/in/andhika-putra-bagaskara13/) | [![Instagram](https://img.icons8.com/color/48/000000/github.png)](https://github.com/andhikaputrab) | [![Instagram](https://img.icons8.com/color/48/000000/instagram-new--v1.png)](https://www.instagram.com/andhikaputrab/)
     """)
     
 with col2:
