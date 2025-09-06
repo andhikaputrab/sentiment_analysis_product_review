@@ -10,14 +10,8 @@ import streamlit as st
 class DataProcessing:
     @staticmethod
     def download_nltk_resources():
-        try:
-            nltk.data.find('corpora/stopwords')
-        except nltk.downloader.DownloadError:
-            nltk.download('stopwords')
-        try:
-            nltk.data.find('tokenizers/punkt')
-        except nltk.downloader.DownloadError:
-            nltk.download('punkt')
+        nltk.download('stopwords')
+        nltk.download('punkt')
 
     @staticmethod
     @st.cache_data
