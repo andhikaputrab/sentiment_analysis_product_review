@@ -7,15 +7,15 @@ LSTM_MODEL: "artifacts/sentiment_lstm_model.h5"
 LSTM_TOKENIZER: "artifacts/tokenizer.pickle"
 
 # Streamlit settings
-PAGE_TITLE: "Overview"
-PAGE_ICON: "static/img/home.png"
-LAYOUT: "wide"
-
-PAGE_TITLE_PROFILE: "Profile"
-PAGE_ICON_PROFILE: "static/img/profile.png"
+PAGE_PROFILE_TITLE: "Profile"
+PAGE_PROFILE_ICON: "static/img/profile.png"
 LAYOUT_PROFILE: "wide"
 
-PAGE_TITLE_CHAT: "Chat"
-PAGE_ICON_CHAT: "🤖"
-LAYOUT_CHAT: "wide"
+PAGE_DATASET_TITLE: "Dataset Overview"
+# PAGE_ICON: "static/img/home.png"
+LAYOUT_DATASET: "wide"
+
+PAGE_IMPLEMENTATION_TITLE: "Model Implementation"
+PAGE_IMPLEMENTATION_ICON: "🤖"
+LAYOUT_IMPLEMENTATION: "wide"
 
