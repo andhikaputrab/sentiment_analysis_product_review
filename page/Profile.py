@@ -42,7 +42,7 @@ def profile():
     with col2:
         st.markdown("---")
         st.markdown("### 📝 Summary")
-        st.markdown(get_pdf_download_link("cv/CV ATS - Andhika Putra Bagaskara.pdf", "cv_andhika_putra_bagaskara.pdf"), unsafe_allow_html=True)
+        st.markdown(get_pdf_download_link("cv/CV ATS - Andhika Putra Bagaskara.pdf", "CV_Andhika_Putra_Bagaskara.pdf"), unsafe_allow_html=True)
         st.markdown("""
         <div style="text-align: justify; margin-top: 20px;">
             I am a Bachelor Degree of Informatics Engineering and currently attending Master Degree of Informatics Engineering at Telkom University.

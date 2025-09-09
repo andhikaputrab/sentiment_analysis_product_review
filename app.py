@@ -29,14 +29,14 @@ def Home():
 
     st.markdown("""
     <div style="background-color: #2e2e2e; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
-        <h4 style="color: #4CAF50;">🧠 Implementasi dengan LSTM</h4>
+        <h4 style="color: #4CAF50;">🧠 LSTM Implementation</h4>
         <p>Try the Long Short-Term Memory (LSTM) model that has been trained to predict sentiment from review text.</p>
     </div>
     """, unsafe_allow_html=True)
 
     st.markdown("""
     <div style="background-color: #2e2e2e; padding: 20px; border-radius: 10px; margin-bottom: 15px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
-        <h4 style="color: #4CAF50;">🤖 Implementasi dengan DistilBERT</h4>
+        <h4 style="color: #4CAF50;">🤖 DistilBERT Implementation</h4>
         <p>Use the fine-tuned DistilBERT model for more advanced sentiment analysis.</p>
     </div>
     """, unsafe_allow_html=True)
