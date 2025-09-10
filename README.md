@@ -1,7 +1,7 @@
 # sentiment_analysis_product_review
 Sentiment Analysis Amazon Product Review using LSTM and DistilBERT
 
-This application is designed to analyze sentiment from Amazon product reviews using LSTM and DistilBERT models.
+This application is designed to analyze sentiment from Amazon product reviews using LSTM and DistilBERT models using Streamlit.
 
 <img style="border: 5px solid white; box-sizing: border-box;" width="1918" height="821" alt="image" src="https://github.com/user-attachments/assets/1fc6a4d5-23f1-4159-a2da-1941a6278463" />
 
@@ -20,3 +20,5 @@ The models used in this application are **Long Short-Term Memory (LSTM)** and **
 - DistilBERT Model Implementation
 
 <img style="border: 5px solid white; box-sizing: border-box;" width="1918" height="817" alt="image" src="https://github.com/user-attachments/assets/3f38e238-47e3-41fc-80f5-fb3135573aba" />
+
+The Following is a link  this application: <a href="https://sentiment-analysis-reviews-app.streamlit.app/"> Streamlit Link</a>
