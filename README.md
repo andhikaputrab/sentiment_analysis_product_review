@@ -7,11 +7,12 @@ This application is designed to analyze sentiment from Amazon product reviews us
 
 There are two main functions in this application, namely:
 1. Dataset Overview
+
 The dataset used for *fine-tuning* the model is the Amazon Product dataset from <a href="https://www.kaggle.com/datasets/mahmudulhaqueshawon/amazon-product-reviews/data" target="_blank">Kaggle</a>. To prepare the data for our model, we first apply a comprehensive preprocessing pipeline to clean and standardize the information. Recognizing the inherent class imbalance within the dataset, we have strategically applied the random oversampling method to mitigate potential biases and improve model performance on minority classes.
 
 <img style="border: 5px solid white; box-sizing: border-box;" width="1918" height="822" alt="image" src="https://github.com/user-attachments/assets/e3202752-f84d-4367-b543-ae16e444a7c1" />
 
-3. Model Implementation
+2. Model Implementation
 The models used in this application are **Long Short-Term Memory (LSTM)** and **DistilBERT**.
 - Long Short-Term Memory (LSTM) Model Implementation
 
