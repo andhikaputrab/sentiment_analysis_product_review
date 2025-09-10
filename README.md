@@ -1,4 +1,4 @@
-# sentiment_analysis_product_review
+# Sentiment Analysis Product Review
 Sentiment Analysis Amazon Product Review using LSTM and DistilBERT
 
 This application is designed to analyze sentiment from Amazon product reviews using LSTM and DistilBERT models using Streamlit.
